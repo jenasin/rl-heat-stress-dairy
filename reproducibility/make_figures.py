@@ -70,6 +70,12 @@ def _key(results, name):
 
 def figure1_data_overview():
     data = MmCowsDataLoader(str(ROOT / "data/mmcows_real/sensor_data")).load()
+    # Raw timestamps are UTC; the MmCows farm is in the US. Shift to local time
+    # (UTC-7) so the diurnal THI peak falls in the early afternoon, consistent
+    # with solar heating and the manuscript ("peaking between 12:00 and 16:00").
+    HOUR_OFFSET = -7
+    data = data.copy()
+    data["hour"] = (data["hour"] + HOUR_OFFSET) % 24
     fig, axes = plt.subplots(2, 2, figsize=(12, 9))
 
     ax = axes[0, 0]
@@ -90,7 +96,7 @@ def figure1_data_overview():
     ax.set_xlim(data["thi"].min() - 1, data["thi"].max() + 1)
     ax.set_ylim(data["cbt"].min() - 0.1, data["cbt"].max() + 0.1)
     ax.set_title("(c) THI vs CBT (coloured by hour)", loc="left", fontweight="bold")
-    cb = plt.colorbar(sc, ax=ax, label="Hour of day"); cb.set_ticks(range(0, 25, 6))
+    cb = plt.colorbar(sc, ax=ax, label="Hour of day (local)"); cb.set_ticks(range(0, 25, 6))
 
     ax = axes[1, 1]
     g = data.groupby("hour")
@@ -104,7 +110,7 @@ def figure1_data_overview():
     l2, = ax2.plot(cbt_m.index, cbt_m.values, "s-", color="#d62728", lw=2, label="CBT")
     ax2.fill_between(cbt_m.index, (cbt_m - cbt_s).values, (cbt_m + cbt_s).values,
                      color="#d62728", alpha=0.2)
-    ax.set_xlabel("Hour of day"); ax.set_xticks(range(0, 25, 3))
+    ax.set_xlabel("Hour of day (local)"); ax.set_xticks(range(0, 25, 3))
     ax.set_ylabel("THI", color="#ff7f0e"); ax2.set_ylabel("CBT (°C)", color="#d62728")
     ax.set_title("(d) Diurnal patterns (mean ± SD)", loc="left", fontweight="bold")
     ax.legend([l1, l2], ["THI", "CBT"], loc="upper left", fontsize=9)
