@@ -32,9 +32,9 @@ dairy-cattle sensor dataset.
 
 See [`reproducibility/REPRODUCIBILITY.md`](reproducibility/REPRODUCIBILITY.md)
 for the full account (random seeds, train/eval protocol, repeated runs,
-hardware, modality missingness, reward-weight sensitivity) and
-[`reproducibility/latex_snippets.tex`](reproducibility/latex_snippets.tex) for
-the manuscript text that fills each of these in.
+hardware, modality missingness, reward-weight sensitivity). The
+corresponding manuscript text changes are kept with the manuscript itself
+(not in this code repository).
 
 ```bash
 python -m venv venv && source venv/bin/activate

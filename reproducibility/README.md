@@ -14,7 +14,6 @@ changed.
 | File | Purpose |
 |---|---|
 | `REPRODUCIBILITY.md` | Full reproducibility report (read this first) |
-| `latex_snippets.tex` | Ready-to-paste LaTeX filling the reviewer's `[insert…]` gaps |
 | `reproduce.py` | Seeded multi-seed re-run; saves results, models, `run_manifest.json` |
 | `sensitivity_reward_weights.py` | Reward-weight sensitivity analysis |
 | `make_figures.py` | Re-renders Figures 1, 3, 4 (published numbers) + suppl. |

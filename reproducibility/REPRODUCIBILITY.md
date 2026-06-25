@@ -40,7 +40,7 @@ preprocessed dataset** (6,607 samples, 10 cows). **There is no separate
 temporal hold-out**: training and evaluation episodes are drawn from the same
 preprocessed pool. The 50 evaluation episodes use the trained policy in
 greedy mode (`training=False`). This is documented truthfully in the manuscript
-Methods (see `latex_snippets.tex`).
+Methods (the corresponding text changes are kept with the manuscript, not in this repository).
 
 ## 4. Number of repeated independent runs
 
@@ -70,8 +70,8 @@ Full machine-readable record: `results/reproducibility/run_manifest.json`.
   `lying_ratio` and `activity` state features are set to fixed
   population-level constants (0.5 and 0.3); CBT, THI and milk yield are loaded
   from the real MmCows streams. The behavioural inputs are therefore constant
-  priors in this proof of concept, not per-animal IMU time series. This should
-  be stated in the manuscript Limitations (see `latex_snippets.tex`).
+  priors in this proof of concept, not per-animal IMU time series. This is
+  stated in the manuscript Limitations.
 
 ## 7. Supplementary: repeated-run confirmation (5 seeds)
 
