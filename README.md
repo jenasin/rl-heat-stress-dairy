@@ -74,11 +74,6 @@ Download it and place it under `data/`:
   scripts under `reproducibility/` provide reproducible repeated runs that
   confirm the qualitative findings without altering the published numbers.
 
-## Funding
-
-Internal Grant Agency of the Czech University of Life Sciences Prague
-(Project No. 2024:31140/1312/3156).
-
 ## Contact
 
 Jan Saro — Czech University of Life Sciences Prague — saroj@pef.czu.cz
