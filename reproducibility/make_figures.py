@@ -30,9 +30,21 @@ import pandas as pd
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Match the original article's polished look (seaborn whitegrid + tab10 palette).
+sns.set_theme(style="whitegrid", context="paper")
+plt.rcParams.update({"figure.dpi": 110, "savefig.dpi": 300, "axes.titleweight": "bold"})
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from streamlit_dqn import MmCowsDataLoader  # noqa: E402
+
+# Per-method colours matching the original figures (tab10).
+METHOD_COLOR = {
+    "No Action": "#9467bd", "THI Threshold": "#8c564b", "CBT Threshold": "#e377c2",
+    "Random": "#7f7f7f", "Standard DQN": "#1f77b4", "Double DQN": "#ff7f0e",
+    "Dueling DQN": "#2ca02c", "Double Dueling DQN + PER": "#d62728",
+}
 
 ROOT = Path(__file__).resolve().parent.parent
 PUB = ROOT / "results" / "paper_figures" / "results.json"
@@ -113,8 +125,7 @@ def figure3_comparison():
     com = [results[_key(results, m)]["mean_comfort"] for m in methods]
     cbt = [results[_key(results, m)]["mean_cbt"] for m in methods]
     x = np.arange(len(methods))
-    colors = ["#ff6b6b" if m in ["No Action", "THI Threshold", "CBT Threshold", "Random"]
-              else "#4ecdc4" for m in methods]
+    colors = [METHOD_COLOR.get(m, "#4ecdc4") for m in methods]
     labels = [SHORT[m] for m in methods]
 
     fig, axes = plt.subplots(1, 3, figsize=(15, 5))
@@ -144,8 +155,7 @@ def figure3_multiseed():
     agg = json.load(open(MULTISEED))
     methods = [m for m in METHOD_ORDER if m in agg]
     x = np.arange(len(methods))
-    colors = ["#ff6b6b" if m in ["No Action", "THI Threshold", "CBT Threshold", "Random"]
-              else "#4ecdc4" for m in methods]
+    colors = [METHOD_COLOR.get(m, "#4ecdc4") for m in methods]
     labels = [SHORT[m] for m in methods]
     rew = [agg[m]["reward_mean"] for m in methods]; rew_sd = [agg[m]["reward_sd"] for m in methods]
     com = [agg[m]["comfort_mean"] for m in methods]; com_sd = [agg[m]["comfort_sd"] for m in methods]
