@@ -1,0 +1,82 @@
+# Paper A: RL Heat Stress Agent Configuration
+
+# Data paths
+data:
+  mmcows_path: "data/mmcows/"
+  processed_path: "data/processed/"
+  
+# Environment settings
+environment:
+  state_features:
+    - thi              # Temperature-Humidity Index
+    - cbt              # Core Body Temperature
+    - lying_ratio      # Proportion of time lying
+    - activity_level   # Movement intensity
+    - hour_of_day      # 0-23
+    - milk_yield_prev  # Previous milk yield
+  
+  actions:
+    - no_action
+    - mild_cooling      # Fans only
+    - intensive_cooling # Fans + sprinklers
+    - water_spray       # Sprinklers only
+  
+  # Reward weights
+  reward:
+    milk_weight: 1.0        # α - milk yield importance
+    comfort_weight: 0.5     # β - comfort score weight
+    energy_penalty: 0.3     # γ - energy cost penalty
+  
+  # THI thresholds
+  thi_thresholds:
+    mild_stress: 68
+    moderate_stress: 72
+    severe_stress: 79
+
+# Agent hyperparameters
+agent:
+  # Common
+  gamma: 0.99
+  learning_rate: 0.0003
+  buffer_size: 100000
+  batch_size: 64
+  
+  # DQN specific
+  dqn:
+    exploration_fraction: 0.2
+    exploration_final_eps: 0.05
+    target_update_interval: 1000
+    
+  # PPO specific
+  ppo:
+    n_steps: 2048
+    n_epochs: 10
+    clip_range: 0.2
+    ent_coef: 0.01
+    vf_coef: 0.5
+
+# Training
+training:
+  total_timesteps: 500000
+  eval_freq: 10000
+  n_eval_episodes: 10
+  save_freq: 50000
+  log_interval: 100
+
+# Evaluation
+evaluation:
+  n_episodes: 100
+  render: false
+  save_trajectories: true
+
+# Baselines
+baselines:
+  thi_threshold: 72
+  cbt_threshold: 39.5
+  
+# Experiment tracking
+experiment:
+  name: "heat_stress_rl"
+  seed: 42
+  use_wandb: false
+  wandb_project: "dairy-rl"

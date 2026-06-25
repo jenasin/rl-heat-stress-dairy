@@ -1,0 +1,75 @@
+{
+  "created_utc": "2026-06-24T18:58:00.472244+00:00",
+  "description": "Seeded multi-seed reproduction of the DQN heat-stress experiment.",
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    1011
+  ],
+  "n_repeated_runs": 5,
+  "train_episodes_per_agent": 200,
+  "eval_episodes": 50,
+  "agent_configurations": {
+    "Standard DQN": {
+      "use_double_dqn": false,
+      "use_dueling": false,
+      "use_per": false,
+      "use_noisy": false
+    },
+    "Double DQN": {
+      "use_double_dqn": true,
+      "use_dueling": false,
+      "use_per": false,
+      "use_noisy": false
+    },
+    "Dueling DQN": {
+      "use_double_dqn": true,
+      "use_dueling": true,
+      "use_per": false,
+      "use_noisy": false
+    },
+    "Double Dueling DQN + PER": {
+      "use_double_dqn": true,
+      "use_dueling": true,
+      "use_per": true,
+      "use_noisy": false
+    }
+  },
+  "baselines": [
+    "No Action",
+    "THI Threshold",
+    "CBT Threshold",
+    "Random"
+  ],
+  "dataset": {
+    "n_samples": 6607,
+    "n_cows": 10,
+    "thi_range": [
+      58.62833333333333,
+      82.70433333333334
+    ],
+    "cbt_range": [
+      35.34733333333334,
+      39.41833333333333
+    ],
+    "heat_stress_ratio": 0.4763130013621916,
+    "split": "No separate temporal holdout: training and evaluation episodes are sampled (random cow + random start window) from the full preprocessed dataset, as implemented in HeatStressEnv.reset(). This matches the primary published run.",
+    "modality_note": "lying_ratio and activity are set to fixed population-level constants (0.5 and 0.3) in MmCowsDataLoader.load(); CBT, THI and milk yield are loaded from the real MmCows sensor streams.",
+    "missingness": {
+      "cbt_records": 197920
+    }
+  },
+  "hardware": {
+    "platform": "macOS-15.1-arm64-arm-64bit",
+    "processor": "arm",
+    "python": "3.10.6"
+  },
+  "library_versions": {
+    "torch": "2.9.1",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3"
+  },
+  "note_on_published_numbers": "The primary Table 3/4 numbers come from a single ORIGINAL run that did not set a global seed (see run_experiment.py). They are preserved unchanged. This script provides seeded repeated runs that confirm the qualitative findings."
+}

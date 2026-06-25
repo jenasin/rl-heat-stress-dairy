@@ -1,0 +1,10 @@
+# Pinned environment used for the reproducibility runs (CPU, macOS arm64).
+# The original published run used NumPy 1.24 / SciPy 1.11 (see manuscript);
+# the seeded reproduction below was executed with the versions pinned here and
+# reproduces the qualitative findings.
+torch==2.9.1
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+matplotlib==3.10.8
+gymnasium==1.2.2

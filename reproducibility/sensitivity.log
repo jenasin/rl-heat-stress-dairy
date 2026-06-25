@@ -1,0 +1,14 @@
+/Users/jansaro/Documents/agents-articles/files-agents/paper_a_rl_heat_stress/venv/lib/python3.10/site-packages/gymnasium/spaces/box.py:236: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/Users/jansaro/Documents/agents-articles/files-agents/paper_a_rl_heat_stress/venv/lib/python3.10/site-packages/gymnasium/spaces/box.py:236: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+  w=(0.4, 0.4, 0.2) -> reward=18.54 action0=100.0% cbt=38.49
+  w=(0.45, 0.45, 0.1) -> reward=20.43 action0=100.0% cbt=38.49
+  w=(0.5, 0.4, 0.1) -> reward=18.22 action0=100.0% cbt=38.49
+  w=(0.34, 0.33, 0.33) -> reward=15.86 action0=100.0% cbt=38.49
+  w=(0.3, 0.3, 0.4) -> reward=14.76 action0=100.0% cbt=38.49
+  w=(0.25, 0.25, 0.5) -> reward=12.86 action0=100.0% cbt=38.49
+  w=(0.3, 0.5, 0.2) -> reward=22.96 action0=100.0% cbt=38.49
+  w=(0.2, 0.6, 0.2) -> reward=27.38 action0=100.0% cbt=38.49
+
+Wrote sensitivity table to /Users/jansaro/Documents/agents-articles/files-agents/paper_a_rl_heat_stress/results/reproducibility/sensitivity_reward_weights.csv

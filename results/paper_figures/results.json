@@ -1,0 +1,74 @@
+{
+  "No Action": {
+    "mean_reward": 17.657874489696972,
+    "std_reward": 5.101067016115631,
+    "mean_comfort": 0.8570936906565657,
+    "mean_cbt": 38.47100906884581
+  },
+  "Thi Threshold": {
+    "mean_reward": 13.029422576000002,
+    "std_reward": 5.277019672859652,
+    "mean_comfort": 0.7999821704545456,
+    "mean_cbt": 38.337520087648144
+  },
+  "Cbt Threshold": {
+    "mean_reward": 17.763398029575757,
+    "std_reward": 4.420187024993504,
+    "mean_comfort": 0.8696172323232322,
+    "mean_cbt": 38.4689154006543
+  },
+  "Random": {
+    "mean_reward": 13.552707032242424,
+    "std_reward": 5.0417678565887005,
+    "mean_comfort": 0.8030756003787879,
+    "mean_cbt": 38.33736144048009
+  },
+  "Standard DQN": {
+    "mean_reward": 16.242046677090915,
+    "std_reward": 6.573854845419206,
+    "mean_comfort": 0.8586615372474747,
+    "mean_cbt": 38.4760539111272,
+    "action_distribution": [
+      0.9295833333333333,
+      0.035416666666666666,
+      0.0,
+      0.035
+    ]
+  },
+  "Double DQN": {
+    "mean_reward": 18.255920064484847,
+    "std_reward": 3.885013870951626,
+    "mean_comfort": 0.8484620492424243,
+    "mean_cbt": 38.51986329396484,
+    "action_distribution": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "Dueling DQN": {
+    "mean_reward": 17.632724132606064,
+    "std_reward": 5.129236911524895,
+    "mean_comfort": 0.863100470328283,
+    "mean_cbt": 38.48104126631588,
+    "action_distribution": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "Double Dueling DQN + PER": {
+    "mean_reward": 17.973251984484847,
+    "std_reward": 5.525178413583402,
+    "mean_comfort": 0.8527242632575758,
+    "mean_cbt": 38.49063871440177,
+    "action_distribution": [
+      0.9929166666666667,
+      0.007083333333333333,
+      0.0,
+      0.0
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "seed": 42,
+  "episodes": 200,
+  "eval_episodes": 50,
+  "grid": [
+    {
+      "alpha_milk": 0.4,
+      "beta_comfort": 0.4,
+      "gamma_energy": 0.2,
+      "mean_reward": 18.539,
+      "std_reward": 2.69,
+      "mean_comfort": 0.855,
+      "mean_cbt": 38.487,
+      "no_intervention_pct": 100.0,
+      "note": "published"
+    },
+    {
+      "alpha_milk": 0.45,
+      "beta_comfort": 0.45,
+      "gamma_energy": 0.1,
+      "mean_reward": 20.43,
+      "std_reward": 3.039,
+      "mean_comfort": 0.855,
+      "mean_cbt": 38.487,
+      "no_intervention_pct": 100.0,
+      "note": ""
+    },
+    {
+      "alpha_milk": 0.5,
+      "beta_comfort": 0.4,
+      "gamma_energy": 0.1,
+      "mean_reward": 18.219,
+      "std_reward": 3.378,
+      "mean_comfort": 0.855,
+      "mean_cbt": 38.487,
+      "no_intervention_pct": 100.0,
+      "note": ""
+    },
+    {
+      "alpha_milk": 0.34,
+      "beta_comfort": 0.33,
+      "gamma_energy": 0.33,
+      "mean_reward": 15.859,
+      "std_reward": 2.281,
+      "mean_comfort": 0.855,
+      "mean_cbt": 38.487,
+      "no_intervention_pct": 100.0,
+      "note": ""
+    },
+    {
+      "alpha_milk": 0.3,
+      "beta_comfort": 0.3,
+      "gamma_energy": 0.4,
+      "mean_reward": 14.756,
+      "std_reward": 2.015,
+      "mean_comfort": 0.855,
+      "mean_cbt": 38.487,
+      "no_intervention_pct": 100.0,
+      "note": ""
+    },
+    {
+      "alpha_milk": 0.25,
+      "beta_comfort": 0.25,
+      "gamma_energy": 0.5,
+      "mean_reward": 12.865,
+      "std_reward": 1.696,
+      "mean_comfort": 0.855,
+      "mean_cbt": 38.487,
+      "no_intervention_pct": 100.0,
+      "note": ""
+    },
+    {
+      "alpha_milk": 0.3,
+      "beta_comfort": 0.5,
+      "gamma_energy": 0.2,
+      "mean_reward": 22.961,
+      "std_reward": 2.033,
+      "mean_comfort": 0.855,
+      "mean_cbt": 38.487,
+      "no_intervention_pct": 100.0,
+      "note": ""
+    },
+    {
+      "alpha_milk": 0.2,
+      "beta_comfort": 0.6,
+      "gamma_energy": 0.2,
+      "mean_reward": 27.383,
+      "std_reward": 1.458,
+      "mean_comfort": 0.855,
+      "mean_cbt": 38.487,
+      "no_intervention_pct": 100.0,
+      "note": ""
+    }
+  ]
+}

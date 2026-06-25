@@ -1,0 +1,57 @@
+/Users/jansaro/Documents/agents-articles/files-agents/paper_a_rl_heat_stress/venv/lib/python3.10/site-packages/gymnasium/spaces/box.py:236: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/Users/jansaro/Documents/agents-articles/files-agents/paper_a_rl_heat_stress/venv/lib/python3.10/site-packages/gymnasium/spaces/box.py:236: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+Loaded 6607 samples / 10 cows | THI 58.6-82.7 | heat-stress 47.6%
+
+===== SEED 42 =====
+  baseline No Action      reward=18.783
+  baseline THI Threshold  reward=14.357
+  baseline CBT Threshold  reward=18.000
+  baseline Random         reward=13.154
+  agent    Standard DQN             reward=17.401 action0=100.0%
+  agent    Double DQN               reward=18.844 action0=72.1%
+  agent    Dueling DQN              reward=17.706 action0=100.0%
+  agent    Double Dueling DQN + PER reward=16.445 action0=100.0%
+
+===== SEED 123 =====
+  baseline No Action      reward=17.576
+  baseline THI Threshold  reward=13.355
+  baseline CBT Threshold  reward=17.841
+  baseline Random         reward=13.606
+  agent    Standard DQN             reward=17.872 action0=100.0%
+  agent    Double DQN               reward=16.154 action0=52.3%
+  agent    Dueling DQN              reward=17.721 action0=100.0%
+  agent    Double Dueling DQN + PER reward=17.455 action0=98.9%
+
+===== SEED 456 =====
+  baseline No Action      reward=17.771
+  baseline THI Threshold  reward=13.194
+  baseline CBT Threshold  reward=16.979
+  baseline Random         reward=13.356
+  agent    Standard DQN             reward=18.919 action0=100.0%
+  agent    Double DQN               reward=18.208 action0=100.0%
+  agent    Dueling DQN              reward=18.623 action0=100.0%
+  agent    Double Dueling DQN + PER reward=16.314 action0=100.0%
+
+===== SEED 789 =====
+  baseline No Action      reward=18.097
+  baseline THI Threshold  reward=13.575
+  baseline CBT Threshold  reward=17.121
+  baseline Random         reward=12.908
+  agent    Standard DQN             reward=17.906 action0=100.0%
+  agent    Double DQN               reward=16.503 action0=99.0%
+  agent    Dueling DQN              reward=18.219 action0=100.0%
+  agent    Double Dueling DQN + PER reward=16.334 action0=100.0%
+
+===== SEED 1011 =====
+  baseline No Action      reward=17.189
+  baseline THI Threshold  reward=14.087
+  baseline CBT Threshold  reward=17.417
+  baseline Random         reward=14.402
+  agent    Standard DQN             reward=17.824 action0=100.0%
+  agent    Double DQN               reward=19.086 action0=100.0%
+  agent    Dueling DQN              reward=18.543 action0=100.0%
+  agent    Double Dueling DQN + PER reward=18.046 action0=100.0%
+
+Done. Wrote results + manifest + models to /Users/jansaro/Documents/agents-articles/files-agents/paper_a_rl_heat_stress/results/reproducibility

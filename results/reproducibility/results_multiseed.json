@@ -1,0 +1,90 @@
+{
+  "No Action": {
+    "reward_mean": 17.883304924412123,
+    "reward_sd": 0.600821376887451,
+    "comfort_mean": 0.8583384720959597,
+    "comfort_sd": 0.00270373412881284,
+    "cbt_mean": 38.49272554694976,
+    "cbt_sd": 0.008198351558844953,
+    "action0_mean": null,
+    "action0_sd": null,
+    "n_seeds": 5
+  },
+  "THI Threshold": {
+    "reward_mean": 13.713425065066668,
+    "reward_sd": 0.4925037728272374,
+    "comfort_mean": 0.7992221867424243,
+    "comfort_sd": 0.01440288665627175,
+    "cbt_mean": 38.34378512393024,
+    "cbt_sd": 0.008547967740389491,
+    "action0_mean": null,
+    "action0_sd": null,
+    "n_seeds": 5
+  },
+  "CBT Threshold": {
+    "reward_mean": 17.471696641745456,
+    "reward_sd": 0.442628935937442,
+    "comfort_mean": 0.8619624952020202,
+    "comfort_sd": 0.005742050537488574,
+    "cbt_mean": 38.48078894260774,
+    "cbt_sd": 0.015864870594628943,
+    "action0_mean": null,
+    "action0_sd": null,
+    "n_seeds": 5
+  },
+  "Random": {
+    "reward_mean": 13.485114419975758,
+    "reward_sd": 0.5732035123616918,
+    "comfort_mean": 0.8027509506313132,
+    "comfort_sd": 0.002691762488257733,
+    "cbt_mean": 38.344634577081,
+    "cbt_sd": 0.016215002352611668,
+    "action0_mean": null,
+    "action0_sd": null,
+    "n_seeds": 5
+  },
+  "Standard DQN": {
+    "reward_mean": 17.98435017410909,
+    "reward_sd": 0.5608434473353188,
+    "comfort_mean": 0.858788242550505,
+    "comfort_sd": 0.006884098387113377,
+    "cbt_mean": 38.48836971556157,
+    "cbt_sd": 0.0191808465833874,
+    "action0_mean": 1.0,
+    "action0_sd": 0.0,
+    "n_seeds": 5
+  },
+  "Double DQN": {
+    "reward_mean": 17.75884601890909,
+    "reward_sd": 1.350260108522198,
+    "comfort_mean": 0.853139702020202,
+    "comfort_sd": 0.012778826282230647,
+    "cbt_mean": 38.47374068357233,
+    "cbt_sd": 0.030192065474680913,
+    "action0_mean": 0.8468333333333333,
+    "action0_sd": 0.21663393182201784,
+    "n_seeds": 5
+  },
+  "Dueling DQN": {
+    "reward_mean": 18.162345735127275,
+    "reward_sd": 0.4370835941686895,
+    "comfort_mean": 0.8602957174242425,
+    "comfort_sd": 0.010312841801017637,
+    "cbt_mean": 38.48375134561779,
+    "cbt_sd": 0.01242021553526604,
+    "action0_mean": 1.0,
+    "action0_sd": 0.0,
+    "n_seeds": 5
+  },
+  "Double Dueling DQN + PER": {
+    "reward_mean": 16.91868890196364,
+    "reward_sd": 0.7890777322663529,
+    "comfort_mean": 0.8596217710858587,
+    "comfort_sd": 0.006922746589286599,
+    "cbt_mean": 38.48847541492586,
+    "cbt_sd": 0.009739071516107634,
+    "action0_mean": 0.9977499999999999,
+    "action0_sd": 0.00503115294937452,
+    "n_seeds": 5
+  }
+}

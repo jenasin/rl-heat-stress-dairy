@@ -1,0 +1,22 @@
+# --- environment & data (large / external) ---
+venv/
+data/
+
+# --- python caches ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# --- OS ---
+.DS_Store
+
+# --- bulky training logs (not needed to reproduce; regenerated on run) ---
+results/tensorboard*/
+results/logs/
+results/logs_*/
+
+# --- manuscript material (kept out of the code repository while under review) ---
+paper/
+paper-fixed/
+Review-article/

@@ -1,0 +1,48 @@
+# Paper A: RL Heat Stress Agent
+# Python 3.9+
+
+# Core ML
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+
+# Deep Learning
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Reinforcement Learning
+gymnasium>=0.29.0
+stable-baselines3>=2.2.0
+sb3-contrib>=2.2.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.15.0
+
+# Explainability
+shap>=0.43.0
+
+# Data handling
+pyarrow>=12.0.0
+h5py>=3.9.0
+
+# Jupyter
+jupyter>=1.0.0
+jupyterlab>=4.0.0
+ipywidgets>=8.0.0
+
+# Config management
+pyyaml>=6.0.0
+hydra-core>=1.3.0
+
+# Logging & tracking
+tensorboard>=2.14.0
+wandb>=0.15.0
+
+# Utilities
+tqdm>=4.65.0
+python-dotenv>=1.0.0
+
+# Testing
+pytest>=7.4.0
