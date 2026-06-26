@@ -60,7 +60,7 @@ reward-weight sensitivity analysis confirm this finding (see
 The MmCows dataset is publicly available and is **not redistributed here**.
 Download it and place it under `data/`:
 
-- HuggingFace: <https://huggingface.co/datasets/TaokyleXD/MmCows>
+- HuggingFace: <https://huggingface.co/datasets/neis-lab/mmcows>
 - Project: <https://github.com/neis-lab/mmcows>
 
 > Reference: Xu T., Zhang Y., Zhu M., et al. *MmCows: a multimodal dataset for
